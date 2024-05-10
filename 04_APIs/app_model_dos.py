@@ -6,7 +6,7 @@ app.config['DEBUG'] = True
 
 # importar el modelo que está en formato pickle
 # IMPORTANTE: al subir a PyhtonEveryWhere modificar por la ruta donde esta el modelo en el directorio de ahí
-with open('04_APIs/text_model.pkl', 'rb') as f:  # 'rb' es para que lo lea en binario que sino no ejecuta
+with open('/home/jaimeih/tc_apis/04_APIs/text_model.pkl', 'rb') as f:  # 'rb' es para que lo lea en binario que sino no ejecuta
     model = pickle.load(f)
 
 @app.route('/')
