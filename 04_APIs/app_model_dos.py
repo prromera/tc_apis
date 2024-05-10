@@ -69,6 +69,7 @@ def home():
 
 
     <p>Esta oracion sera borrada como ejemplo del repo</p>
+    <p>Esta oracion sera borrada como ejemplo del repo tambien</p>
 </body>
 </html>
 """
