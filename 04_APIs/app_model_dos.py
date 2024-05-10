@@ -37,7 +37,7 @@ def home():
 </head>
 <body>
     <h1>Bienvenido a la API de Análisis de Sentimientos</h1>
-    <p>Esta API utiliza el modelo VADER (Valence Aware Dictionary and sEntiment Reasoner) para analizar el sentimiento de un texto en inglés.</p>
+    <p>Esta API utiliza el modelo VADER (Valence Aware Dictionary and sEntiment Reasoner) para analizar el sentimiento de un texto en inglés. Pertenece a la libreria NLTK (Natural Language Tool Kit)</p>
     <p>El modelo VADER es particularmente adecuado para manejar textos provenientes de redes sociales, donde el lenguaje suele ser informal, incluyendo emoticones, acrónimos y otros tipos de jerga.</p>
     <p>Cómo Funciona VADER:</p>
     <ul>
@@ -56,11 +56,16 @@ def home():
         <li><strong>pos</strong>: Puntuación de positividad.</li>
         <li><strong>compound</strong>: Una puntuación compuesta que calcula la suma normalizada de todas las puntuaciones de léxico que han sido normalizadas entre -1 (muy negativo) y +1 (muy positivo).</li>
     </ul>
+    <div style="background-color: #FFDCA7; padding: 10px; border-radius: 5px;">
+        <p style="font-weight: bold;">Atención:</p>
+        <p>La diferencia principal entre la puntuación compuesta y las puntuaciones de positivo, neutro y negativo es que las últimas se calculan a partir de las palabras de forma individual, mientras que la puntuación compuesta tiene en cuenta el contexto global del texto y puede asignar diferentes pesos a las palabras en función de su posición y relación con otras palabras circundantes.</p>
+        <p>Debido a esta consideración del contexto y las reglas heurísticas aplicadas, es posible que la puntuación compuesta refleje una polaridad más extrema que las puntuaciones individuales, ya que tiene en cuenta la combinación de palabras en toda la frase. Esto puede explicar por qué la puntuación compuesta puede ser muy negativa mientras que las puntuaciones de positivo, neutro y negativo pueden ser más equilibradas entre sí.</p>
+    </div>
+    </ul>
     <p>Ejemplo de uso del endpoint:</p>
     <code>http://jaimeih.pythonanywhere.com/api/v1/predict?text=I%20love%20Python</code>
     <p>Este ejemplo analiza el texto "I love Python". Copia y pega esta URL en tu navegador para probarlo.</p>
-    <p>Recuerda que después de cada palabra en el texto de la URL es necesario añadir "%20" para que sea considerado un espacio.</p>
-    <p>oracion de prueba 1 2 3 4</p>
+    <p>Recuerda que después de cada palabra en el texto de la URL es necesario añadir un espacio para que el modelo pueda diferenciarlas (puedes hacerlo añadiendo "%20" despu´és de cada palabra).</p>
 </body>
 </html>
 """
