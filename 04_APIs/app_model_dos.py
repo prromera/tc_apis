@@ -14,7 +14,7 @@ def home():
     return """
 <html>
 <head>
-    <title>API de Análisis de Sentimientos</title>
+    <title>Adió con el corazon que con el alma no puedo, ha sido un placer que llegase el domingo.... Muchas gracias curso</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -36,7 +36,7 @@ def home():
     </style>
 </head>
 <body>
-    <h1>Bienvenido a la API de Análisis de Sentimientos</h1>
+    <h1>Manue no te arrime a la paré que te va a llená de cá</h1>
     <p>Esta API utiliza el modelo VADER (Valence Aware Dictionary and sEntiment Reasoner) para analizar el sentimiento de un texto en inglés. Pertenece a la libreria NLTK (Natural Language Tool Kit)</p>
     <p>El modelo VADER es particularmente adecuado para manejar textos provenientes de redes sociales, donde el lenguaje suele ser informal, incluyendo emoticones, acrónimos y otros tipos de jerga.</p>
     <p>Cómo Funciona VADER:</p>
