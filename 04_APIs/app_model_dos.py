@@ -65,7 +65,10 @@ def home():
     <p>Ejemplo de uso del endpoint:</p>
     <code>http://jaimeih.pythonanywhere.com/api/v1/predict?text=I%20love%20Python</code>
     <p>Este ejemplo analiza el texto "I love Python". Copia y pega esta URL en tu navegador para probarlo.</p>
-    <p>Recuerda que después de cada palabra en el texto de la URL es necesario añadir un espacio para que el modelo pueda diferenciarlas (puedes hacerlo añadiendo "%20" despu´és de cada palabra).</p>
+    <p>Recuerda que después de cada palabra en el texto de la URL es necesario añadir un espacio para que el modelo pueda diferenciarlas (puedes hacerlo añadiendo "%20" despues de cada palabra).</p>
+
+
+    <p>Esta oracion sera borrada como ejemplo del repo</p>
 </body>
 </html>
 """
