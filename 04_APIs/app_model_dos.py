@@ -60,6 +60,7 @@ def home():
     <code>http://jaimeih.pythonanywhere.com/api/v1/predict?text=I%20love%20Python</code>
     <p>Este ejemplo analiza el texto "I love Python". Copia y pega esta URL en tu navegador para probarlo.</p>
     <p>Recuerda que después de cada palabra en el texto de la URL es necesario añadir "%20" para que sea considerado un espacio.</p>
+    <p>oracion de prueba 1 2 3 4</p>
 </body>
 </html>
 """
